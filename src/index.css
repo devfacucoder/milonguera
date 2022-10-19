@@ -3,8 +3,11 @@
   margin: 0px;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
-  background: #D7C0AE;
+  background: #594545;
   min-height: 100vh;
 }
 h1,h2{

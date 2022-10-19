@@ -1,28 +1,52 @@
-import {Header,Footer} from './componets/statics/StaticImport'
-import {Home,About,Carta,Franquicia} from './componets/pages/PageImport'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import './App.css'
+import Header from "./componets/Header";
+import "./App.css";
+import { AiOutlineArrowDown } from "react-icons/ai";
 function App() {
-  
-  return (  
-    <div className='App'>
-      <Header/>
+  return (
+    <div className="App">
+      <Header />
       <main>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/carta' element={<Carta/>}/>
-            <Route path='/franquicia' element={<Franquicia/>}/>
-    
+        <section className="sec_presentacion">
+          <div className="presentacion">
+            <div className="presentacion_info">
+              <p>
+                Vendemos Las Mejores Milanesas de San Juan. Caseras Hechas en el
+                Momento con Gran Variedad De tipos
+              </p>
+            </div>
 
-          </Routes>
-        
+            <div className="box_img_presentacion">
+              <img src="img/milapollo1.jpg" alt="" />
+            </div>
+            <div className="presentacion_indicador">
+              <p>
+                <a href="#footer">Menu</a>
+              </p>
+              -<AiOutlineArrowDown className="indicador" />-
+            </div>
+          </div>
+        </section>
+        <section>
+          <div id="Menu" className="menu">
+            <div className="menu_articles">
+              <article>
+                <div className="box_article_till">
+                  <h3>Milas De Cerdo</h3>
+                </div>
 
+                <div className="box_img">
+                  <img src="img/milacerdo1.jpg"/>
+
+                </div> 
+              </article>
+
+            </div>
+          </div>
+        </section>
       </main>
-      <Footer/>
 
+      <footer id="footer">hola</footer>
     </div>
-
   );
 }
 
