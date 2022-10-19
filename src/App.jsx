@@ -29,17 +29,30 @@ function App() {
         <section>
           <div id="Menu" className="menu">
             <div className="menu_articles">
-              <article>
-                <div className="box_article_till">
+              <article className="article_color_val1">
+                <div className="box_article_till ">
                   <h3>Milas De Cerdo</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+
                 </div>
 
                 <div className="box_img">
-                  <img src="img/milacerdo1.jpg"/>
-
-                </div> 
+                  <img src="img/milacerdo1.jpg" />
+                </div>
               </article>
+              <article className="article_color_val2">
+                <div className="box_article_till ">
 
+                  <h3>Milas De Cerdo</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                </div>
+
+                <div className="box_img">
+                  <img src="img/milacarne1.jpg" />
+                </div>
+              </article>
             </div>
           </div>
         </section>
